@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using UnityEngine;
 
 public class NetworkManager : MonoBehaviour {
@@ -11,11 +12,17 @@ public class NetworkManager : MonoBehaviour {
 
     private void OnGUI()
     {
-        // 接続済み
-        if (connected)
+
+        // ホスト名を取得する
+        string hostname = Dns.GetHostName();
+
+        // ホスト名からIPアドレスを取得する
+        IPAddress[] adrList = Dns.GetHostAddresses(hostname);
+ //       IPAddress[] adrList = Dns.GetHostAddresses(hostname);
+
+        if (connected) //接続済み
         {
             GUILayout.Label("Connections: " + Network.connections.Length.ToString());
-            // 接続を切断する場合
             if (GUILayout.Button("Disconnect"))
             {
                 Network.Disconnect();
@@ -24,6 +31,7 @@ public class NetworkManager : MonoBehaviour {
         else
         {
             // 画面の入力情報を取得する。
+
             connectionIP = GUILayout.TextField(connectionIP);
             int.TryParse(GUILayout.TextField(portNumber.ToString()), out portNumber);
 
@@ -38,10 +46,19 @@ public class NetworkManager : MonoBehaviour {
             {
                 Network.InitializeServer(4, portNumber, false);
             }
+            GUILayout.Label("Your IP addr");
+            foreach (IPAddress address in adrList)
+            {
+                if (address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork) {
+                    GUILayout.Label(address.ToString());
+                }
+
+            }
+
         }
     }
 
-    #region Connection
+#region debug
     //サーバーが初期化されたとき、サーバー側で呼び出されます。
     void OnServerInitialized()
     {
@@ -94,5 +111,5 @@ public class NetworkManager : MonoBehaviour {
     {
         Debug.Log("Could not connect to server: " + error);
     }
-    #endregion
+#endregion
 }
