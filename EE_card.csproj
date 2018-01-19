@@ -282,6 +282,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\card.cs" />
+    <Compile Include="Assets\game.cs" />
+    <Compile Include="Assets\player.cs" />
+    <Compile Include="Assets\rend_card.cs" />
     <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
     <Compile Include="Assets\Scripts\ApplicationManager.cs" />
     <Compile Include="Assets\Scripts\ChangeColor.cs" />
@@ -337,6 +341,7 @@
     <Compile Include="Assets\Table and chair\Standard Assets\Effects\ImageEffects\Scripts\Twirl.cs" />
     <Compile Include="Assets\Table and chair\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
     <Compile Include="Assets\Table and chair\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
+    <Compile Include="Assets\Trial_script.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Fonts\Jupiter\LICENSE.txt" />
