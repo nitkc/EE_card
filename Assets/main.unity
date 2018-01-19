@@ -378,6 +378,7 @@ Prefab:
   m_IsPrefabParent: 0
 --- !u!1 &751436981
 GameObject:
+
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -543,6 +544,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4282556768819050, guid: 924e513fc31ed654b81e815dc357043c, type: 2}
       propertyPath: m_LocalPosition.y
+
       value: 13.73
       objectReference: {fileID: 0}
     - target: {fileID: 4282556768819050, guid: 924e513fc31ed654b81e815dc357043c, type: 2}
@@ -717,3 +719,4 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 737159250}
   m_Script: {fileID: 11500000, guid: ddca1ff2dc953fc4dac20e7d54b14aa5, type: 3}
+
