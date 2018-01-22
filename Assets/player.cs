@@ -12,17 +12,6 @@ public class player : MonoBehaviour {
     public GameObject[] h_obj = new GameObject[5]; //手札の3Dモデル　オブジェクト
     public Material[] h_mat = new Material[4];　//カードの柄の画像
 
-    // Use this for initialization
-    void Start () {
-  
-    }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-
     public int search_type(int c) { //カードの種類の情報を検索
         int a = hand[c].type; //カードの種類の情報を格納した戻り値
         return a;
