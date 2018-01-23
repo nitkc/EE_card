@@ -282,10 +282,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\card.cs" />
-    <Compile Include="Assets\game.cs" />
-    <Compile Include="Assets\player.cs" />
-    <Compile Include="Assets\rend_card.cs" />
     <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
     <Compile Include="Assets\Scripts\ApplicationManager.cs" />
     <Compile Include="Assets\Scripts\ChangeColor.cs" />
