@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 33091357812298226}
   - component: {fileID: 64424907600601300}
   - component: {fileID: 23241704399708156}
+  - component: {fileID: 114330115130822190}
   m_Layer: 0
   m_Name: Card_F
   m_TagString: Untagged
@@ -213,3 +214,18 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114330115130822190
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1460804667352464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1fa6df0975a2cb42bb1668c78ff280f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teacher: {fileID: 2100000, guid: 7c0f98fe31a389d439682612a2b6c209, type: 2}
+  student: {fileID: 2100000, guid: 9f36ce2ac6b9abc44bde62f1719bbe16, type: 2}
+  retination: {fileID: 2100000, guid: 62b45dbafa8e9f94a8046bcd09dfcb9f, type: 2}
+  jobee: {fileID: 2100000, guid: d9b7c00832e7fd342b1df9610146a294, type: 2}
