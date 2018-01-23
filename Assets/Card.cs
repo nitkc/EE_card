@@ -13,17 +13,7 @@ public class Card : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            type++;
-            if (type == 4)
-            {
-                type = 0;
-            }
-        }
-
-            switch (type)
+        switch (type)
         {
             case 0:
                 this.GetComponent<Renderer>().material = teacher;
